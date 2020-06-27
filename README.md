@@ -1,2 +1,2 @@
 # blog
-udemy blog project
+udacity blog project

@@ -22,3 +22,7 @@
     background-color:  rgb(180, 179, 179);
     color: purple;
 }
+
+#name {
+    text-decoration: underline;
+}

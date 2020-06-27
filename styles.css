@@ -1,0 +1,151 @@
+@import 'css/blog.css';
+@import 'css/blog2.css';
+@import 'css/about-me.css';
+@import 'css/blog-page.css';
+
+body {
+    background-color: white;
+    margin: 0; 
+    padding: 0; 
+    overflow-y: scroll; 
+}
+
+.container {
+    display: grid; 
+    grid-template-rows: 80px auto auto; 
+    grid-template-areas: 
+    "hd"
+    "main"
+    "ft"; 
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+#nav-bar {
+    grid-area: hd; 
+    position: fixed;
+    width: 100%;
+    background-color: rgb(180, 179, 179);
+    border-bottom: 2px solid black;
+}
+
+.nav-buttons {
+    display: flex; 
+    justify-content: center;
+}
+
+.nav-button {
+    margin-top: 50px;
+    width: 140px; 
+    border: none;
+    font-size: 24px;
+    color: purple;
+    background-color: rgb(180, 179, 179);
+}
+
+.nav-button:hover {
+    color: rgb(243, 77, 243);
+}
+
+#content {
+    grid-area: main; 
+    color: purple;
+}
+
+#about-me {
+    width: 30%; 
+    text-align: left;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#blog-list {
+    display: flex; 
+    grid-area: main; 
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    background-color: rgb(180, 179, 179);
+}
+
+@media (max-width: 1035px) {
+    .blogs {
+        border: 2px solid purple; 
+        width: 100px;
+        height: 200px; 
+        padding: 10px;
+        font-size: 12px;
+    }
+    
+    #rocky {
+        width: 90px;
+    }
+    
+    #tree {
+        width: 90px;
+    }
+    
+    #son {
+        width: 90px;
+    }
+    
+    #me-pic {
+        width: 20%;
+    }
+}
+
+@media(min-width: 1036px) {
+    .blogs {
+        border: 2px solid purple; 
+        width: 300px;
+        height: 300px; 
+        padding: 10px;
+        font-size: 18px;
+    }
+    
+    #rocky {
+        width: 190px;
+    }
+    
+    #tree {
+        width: 230px;
+    }
+    
+    #son {
+        width: 250px;
+        height: 162px;
+    }
+    
+    #me-pic {
+        width: 20%;
+    }
+}
+
+#footer {
+    grid-area: ft;
+    width: 100%;
+    bottom: 0;
+    height: 2.5em;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(180, 179, 179);
+    border-top: 2px solid black;
+}
+
+#subscribe {
+    margin-right: 100px; 
+    font-size: 20px;;
+}
+
+a {
+    color: purple;
+}
+
+a:hover {
+    color: rgb(243, 77, 243);
+}
+

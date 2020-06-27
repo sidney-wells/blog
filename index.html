@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>sidney's blog</title>
+        <link rel="stylesheet" type="text/css" href="./styles.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0" nonce="Fu3zp9PL"></script>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <script src="https://apis.google.com/js/platform.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="nav-bar">
+                <div class="nav-buttons">
+                    <button class="nav-button" onclick="window.location.href='index.html'">Home</button>
+                    <button class="nav-button" onclick="window.location.href='html/blogs.html'">Blog</button>
+                    <button class="nav-button" onclick="window.location.href='html/about-me.html'">About Me</button>
+                </div>
+            </div>
+            <div id="content">
+                <div id="about-me">
+                    <img id="me-pic" src="/images/emoji.jpg" alt="aww no selfie">
+                    <h1>hi, my name is sidney</h1>
+                    <h1>welcome to my blog</h1>
+                    <h1>be inspired</h1>
+                </div>
+                <div id="blog-list">
+                    <div class="blogs">
+                        <a href="html/blog1.html">man in the arena</a>
+                        <h4>by theodore roosevelt</h4>
+                        <img id="rocky" src="/images/rocky.PNG" alt="cool pic">
+                        <h4>topic: overcoming failure</h4>
+                    </div>
+                    <div class="blogs">
+                        <a href="html/blog2.html">the woodcarver</a>
+                        <h4>by chuang tzu</h4>
+                        <img id="tree" src="/images/tree.jpg" alt="cool pic">
+                        <h4>topic: attention</h3>
+                    </div>
+                    <div class="blogs">
+                        <a href="html/blog3.html">the prodigal son</a>
+                        <h4>bible story</h4>
+                        <img id="son" src="/images/son.jpg" alt="cool pic">
+                        <h4>topic: forgiveness</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <a id="subscribe" href="html/about-me.html">click here to subscribe</a>
+            <div 
+                class="fb-share-button" 
+                data-href="https://www.facebook.com/Yankees/" 
+                data-layout="button_count" 
+                data-size="small">
+                    <a 
+                        target="_blank" 
+                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2FYankees%2F&amp;src=sdkpreparse" 
+                        class="fb-xfbml-parse-ignore"
+                        id="fb">
+                        Share
+                    </a>
+            </div>
+            <a 
+                href="https://twitter.com/Yankees?ref_src=twsrc%5Etfw" 
+                class="twitter-follow-button" 
+                id="tw"
+                data-show-count="false">
+                Follow @Yankees
+            </a>
+            <div 
+                class="g-ytsubscribe"
+                id="yt"
+                data-channel="GoogleDevelopers"
+                data-layout="default"
+                data-theme="dark"
+                data-count="default">
+            </div>
+        </div>
+    </body>
+</html>

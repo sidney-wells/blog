@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="../styles.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0" nonce="Fu3zp9PL"></script>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <script src="https://apis.google.com/js/platform.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="nav-bar">
+                <div class="nav-buttons">
+                    <button class="nav-button" onclick="window.location.href='../index.html'">Home</button>
+                    <button class="nav-button" onclick="window.location.href='blogs.html'">Blog</button>
+                    <button class="nav-button" onclick="window.location.href='about-me.html'">About Me</button>
+                </div>
+            </div>
+            <div id="content">
+                <div id="about-me">
+                    <img id="me-pic" src="/images/emoji.jpg">
+                    <h1>hi, my name is sidney</h1>
+                    <h1>subscribe below</h1>
+                    <h1>for the latest content</h1>
+                    <form id="form-input">            
+                        <input id="email" type="text" placeholder="email here">
+                        <button id="submit-btn" type="submit">subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <a id="subscribe" href="about-me.html">click here to subscribe</a>
+            <div 
+                class="fb-share-button" 
+                data-href="https://www.facebook.com/Yankees/" 
+                data-layout="button_count" 
+                data-size="small">
+                    <a 
+                        target="_blank" 
+                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2FYankees%2F&amp;src=sdkpreparse" 
+                        class="fb-xfbml-parse-ignore"
+                        id="fb">
+                        Share
+                    </a>
+            </div>
+            <a 
+                href="https://twitter.com/Yankees?ref_src=twsrc%5Etfw" 
+                class="twitter-follow-button" 
+                id="tw"
+                data-show-count="false">
+                Follow @Yankees
+            </a>
+            <div 
+                class="g-ytsubscribe"
+                id="yt"
+                data-channel="GoogleDevelopers"
+                data-layout="default"
+                data-theme="dark"
+                data-count="default">
+            </div>
+        </div>
+    </body>
+</html>

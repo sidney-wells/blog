@@ -1,2 +1,2 @@
 # blog
-udacity blog project
+udacity front end nanodegree blog project
